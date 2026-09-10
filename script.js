@@ -1,10 +1,53 @@
 /* =========================================
    HELPER
-========================================= */
+========================================== */
 
 const $ = (selector) => {
   return document.querySelector(selector);
 };
+
+
+/* =========================================
+   YOUTUBE PLAYER
+========================================== */
+
+const music = $("#bgMusic");
+
+let isPlaying = false;
+
+
+function playMusic() {
+
+  if (music) {
+
+    music.currentTime = 212;
+
+    music.play().catch(function() {
+
+      console.log(
+        "Autoplay diblokir browser."
+      );
+
+    });
+
+    isPlaying = true;
+
+  }
+
+}
+
+
+function pauseMusic() {
+
+  if (music) {
+
+    music.pause();
+
+    isPlaying = false;
+
+  }
+
+}
 
 
 /* =========================================
@@ -72,8 +115,6 @@ const openBtn = $("#openBtn");
 
 const content = $("#content");
 
-const music = $("#bgMusic");
-
 const musicToggle =
   $("#musicToggle");
 
@@ -95,19 +136,7 @@ if (openBtn) {
         Coba memainkan musik
       */
 
-      if (music) {
-
-        music
-          .play()
-          .catch(() => {
-
-            console.log(
-              "Browser membutuhkan interaksi pengguna untuk memainkan audio."
-            );
-
-          });
-
-      }
+      playMusic();
 
 
       /*
@@ -139,7 +168,7 @@ if (openBtn) {
    MUSIC TOGGLE
 ========================================= */
 
-if (musicToggle && music) {
+if (musicToggle) {
 
   musicToggle.addEventListener(
     "click",
@@ -149,22 +178,11 @@ if (musicToggle && music) {
         Jika musik sedang berhenti
       */
 
-      if (music.paused) {
+      if (!isPlaying) {
 
-        music
-          .play()
-          .then(() => {
+        playMusic();
 
-            musicToggle.textContent = "♫";
-
-          })
-          .catch(() => {
-
-            console.log(
-              "Musik tidak dapat dimainkan."
-            );
-
-          });
+        musicToggle.textContent = "♫";
 
       }
 
@@ -174,7 +192,7 @@ if (musicToggle && music) {
 
       else {
 
-        music.pause();
+        pauseMusic();
 
         musicToggle.textContent = "×";
 

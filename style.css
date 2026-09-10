@@ -12,8 +12,8 @@ html {
 
 body {
   margin: 0;
-  background: #fdfdfc;
-  color: #34414a;
+  background: #1a1a1a;
+  color: #e0e0e0;
   font-family: "Inter", Arial, sans-serif;
   font-weight: 400;
   line-height: 1.7;
@@ -41,7 +41,7 @@ body {
   position: fixed;
   inset: 0;
 
-  background: #fdfdfc;
+  background: #1a1a1a;
 
   z-index: 9999;
 
@@ -78,7 +78,7 @@ body {
 
   letter-spacing: 3px;
 
-  color: #87959c;
+  color: #a0a0a0;
 }
 
 
@@ -102,9 +102,9 @@ body {
   background:
     radial-gradient(
       circle at 50% 25%,
-      #ffffff 0%,
-      #fdfdfc 52%,
-      #eef5f6 100%
+      #2a2a2a 0%,
+      #1a1a1a 52%,
+      #111111 100%
     );
 }
 
@@ -116,7 +116,7 @@ body {
 
   inset: 0;
 
-  opacity: 0.25;
+  opacity: 0.1;
 
   pointer-events: none;
 
@@ -146,7 +146,7 @@ body {
 
   letter-spacing: 3px;
 
-  color: #899ca5;
+  color: #b0b0b0;
 }
 
 .opening {
@@ -156,7 +156,7 @@ body {
 
   font-weight: 500;
 
-  color: #5c6c74;
+  color: #d0d0d0;
 }
 
 .divider {
@@ -176,7 +176,7 @@ body {
 
   font-style: italic;
 
-  color: #63747c;
+  color: #c0c0c0;
 }
 
 .cover-quote {
@@ -188,7 +188,7 @@ body {
 
   letter-spacing: 3px;
 
-  color: #899ca5;
+  color: #b0b0b0;
 }
 
 
@@ -219,7 +219,7 @@ body {
 
   font-style: italic;
 
-  color: #788991;
+  color: #a0a0a0;
 
   margin: 8px;
 }
@@ -252,10 +252,10 @@ body {
 .gold-btn {
   background: #c9a96b;
 
-  color: #ffffff;
+  color: #1a1a1a;
 
   box-shadow:
-    0 7px 25px rgba(201, 169, 107, 0.21);
+    0 7px 25px rgba(201, 169, 107, 0.3);
 }
 
 .gold-btn:hover {
@@ -265,15 +265,15 @@ body {
 .outline-btn {
   border: 1px solid #c9a96b;
 
-  color: #9c7a3e;
+  color: #c9a96b;
 
-  background: #ffffff;
+  background: transparent;
 }
 
 .outline-btn:hover {
   background: #c9a96b;
 
-  color: #ffffff;
+  color: #1a1a1a;
 }
 
 
@@ -286,7 +286,7 @@ body {
 
   font-size: 11px;
 
-  color: #7b8a91;
+  color: #b0b0b0;
 }
 
 .guest strong {
@@ -345,12 +345,12 @@ body {
 
   z-index: 20;
 
-  background: rgba(253, 253, 252, 0.93);
+  background: rgba(26, 26, 26, 0.93);
 
   backdrop-filter: blur(12px);
 
   border-bottom:
-    1px solid #e8e8e4;
+    1px solid #333333;
 
   display: flex;
 
@@ -368,13 +368,13 @@ body {
 
   text-decoration: none;
 
-  color: #68777e;
+  color: #c0c0c0;
 
   transition: 0.3s;
 }
 
 .nav a:hover {
-  color: #b49358;
+  color: #c9a96b;
 }
 
 
@@ -405,7 +405,7 @@ body {
 
   font-weight: 600;
 
-  color: #4c5d65;
+  color: #e0e0e0;
 
   margin:
     0 0 40px;
@@ -451,11 +451,11 @@ body {
   margin: auto;
 
   border:
-    1px solid #d8c7a6;
+    1px solid #444444;
 
   padding: 7px;
 
-  background: #ffffff;
+  background: #2a2a2a;
 }
 
 .portrait img {
@@ -479,7 +479,7 @@ body {
 
   font-weight: 500;
 
-  color: #b49358;
+  color: #c9a96b;
 
   margin:
     14px 0 2px;
@@ -490,13 +490,13 @@ body {
 
   letter-spacing: 2px;
 
-  color: #93a4aa;
+  color: #a0a0a0;
 }
 
 .person p:last-child {
   font-size: 12px;
 
-  color: #7d8b91;
+  color: #b0b0b0;
 }
 
 .ampersand {
@@ -515,7 +515,7 @@ body {
 .quote-section {
   max-width: none;
 
-  background: #eef5f6;
+  background: #222222;
 
   padding:
     75px
@@ -536,7 +536,7 @@ body {
 ========================================= */
 
 .event-section {
-  background: #fdfdfc;
+  background: #1a1a1a;
 }
 
 .event-card {
@@ -551,20 +551,20 @@ body {
     25px;
 
   border:
-    1px solid #e7dfcf;
+    1px solid #444444;
 
   border-radius: 18px;
 
   background:
-    rgba(255, 255, 255, 0.8);
+    rgba(42, 42, 42, 0.8);
 
   box-shadow:
     0 15px 50px
-    rgba(83, 99, 106, 0.04);
+    rgba(0, 0, 0, 0.3);
 }
 
 .event-date {
-  color: #75858c;
+  color: #b0b0b0;
 
   margin-bottom: 30px;
 }
@@ -625,7 +625,7 @@ body {
 
   margin: 3px 0;
 
-  color: #78878d;
+  color: #b0b0b0;
 }
 
 
@@ -634,7 +634,7 @@ body {
 ========================================= */
 
 .countdown-section {
-  background: #f5f8f8;
+  background: #222222;
 
   max-width: none;
 }
@@ -662,13 +662,15 @@ body {
 
   font-weight: 500;
 
-  color: #b49358;
+  color: #c9a96b;
 }
 
 .countdown span {
   font-size: 8px;
 
   letter-spacing: 2px;
+
+  color: #a0a0a0;
 }
 
 .countdown i {
@@ -707,7 +709,7 @@ body {
   padding: 15px;
 
   border-top:
-    1px solid #ddd7c9;
+    1px solid #444444;
 }
 
 .family-grid p {
@@ -755,10 +757,10 @@ body {
 
 .form-card,
 .gift-card {
-  background: #ffffff;
+  background: #2a2a2a;
 
   border:
-    1px solid #e8e0d3;
+    1px solid #444444;
 
   border-radius: 18px;
 
@@ -766,7 +768,7 @@ body {
 
   box-shadow:
     0 15px 50px
-    rgba(83, 99, 106, 0.04);
+    rgba(0, 0, 0, 0.3);
 }
 
 .form-card label {
@@ -777,6 +779,8 @@ body {
   letter-spacing: 1px;
 
   margin-bottom: 15px;
+
+  color: #c0c0c0;
 }
 
 .form-card input,
@@ -787,7 +791,7 @@ body {
   margin-top: 6px;
 
   border:
-    1px solid #e2e4df;
+    1px solid #555555;
 
   border-radius: 10px;
 
@@ -797,7 +801,9 @@ body {
 
   font-size: 13px;
 
-  background: #fdfdfc;
+  background: #1a1a1a;
+
+  color: #e0e0e0;
 
   outline: none;
 
@@ -811,7 +817,7 @@ body {
 
   box-shadow:
     0 0 0 3px
-    rgba(201, 169, 107, 0.08);
+    rgba(201, 169, 107, 0.15);
 }
 
 .form-card textarea {
@@ -830,11 +836,11 @@ body {
   padding: 17px;
 
   border:
-    1px solid #e8e0d3;
+    1px solid #444444;
 
   border-radius: 14px;
 
-  background: #ffffff;
+  background: #2a2a2a;
 }
 
 .message b {
@@ -842,13 +848,13 @@ body {
 
   font-size: 20px;
 
-  color: #9b7b43;
+  color: #c9a96b;
 }
 
 .message small {
   float: right;
 
-  color: #9aa5a9;
+  color: #a0a0a0;
 }
 
 .message p {
@@ -882,7 +888,7 @@ body {
 
   break-inside: avoid;
 
-  background: #e8eff0;
+  background: #333333;
 
   min-height: 170px;
 
@@ -895,7 +901,7 @@ body {
 ========================================= */
 
 .gift {
-  background: #f4f8f8;
+  background: #222222;
 
   max-width: none;
 }
@@ -915,7 +921,7 @@ body {
 
   font-weight: 700;
 
-  color: #8e9ca0;
+  color: #a0a0a0;
 
   letter-spacing: 3px;
 }
@@ -927,7 +933,7 @@ body {
 
   font-size: 28px;
 
-  color: #586971;
+  color: #e0e0e0;
 
   letter-spacing: 2px;
 }
@@ -941,7 +947,7 @@ body {
 
   margin-top: 10px;
 
-  color: #8e9a9f;
+  color: #a0a0a0;
 }
 
 
@@ -964,7 +970,7 @@ body {
 
   font-size: 48px !important;
 
-  color: #b49358 !important;
+  color: #c9a96b !important;
 
   margin: 0 !important;
 }
@@ -974,11 +980,11 @@ body {
 
   font-size: 28px;
 
-  color: #89979c;
+  color: #a0a0a0;
 }
 
 .whatsapp {
-  color: #71838b;
+  color: #c0c0c0;
 
   font-size: 11px;
 
@@ -1008,7 +1014,7 @@ body {
 
 /* =========================================
    MUSIC
-========================================= */
+========================================== */
 
 .music-toggle {
   position: fixed;
@@ -1024,11 +1030,11 @@ body {
   height: 43px;
 
   border:
-    1px solid #d8c7a6;
+    1px solid #c9a96b;
 
-  background: #fffdf9;
+  background: #2a2a2a;
 
-  color: #b49358;
+  color: #c9a96b;
 
   border-radius: 50%;
 
@@ -1038,7 +1044,7 @@ body {
 
   box-shadow:
     0 8px 25px
-    rgba(0, 0, 0, 0.05);
+    rgba(0, 0, 0, 0.3);
 }
 
 
